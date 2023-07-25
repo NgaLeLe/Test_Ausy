@@ -8,8 +8,11 @@ Resource        ../../ressources/KeywordDefinitions/CartKwObject.robot
 
 
 *** Test Cases ***
-Add_Place_Order_To_Cart
-    [Documentation]
+CART_Annuler_OrderPlace
+    [Documentation]     En tant que l'utilisateur de l'application Product Store (SP),
+    ...                 je peux aller au page Cart, suite, click button "Place Order"
+    ...                 afin je peux annuler d'ajouter nouveau Purchase
+    [Tags]    CART_01
     Opening_PS_With_url     ${URL}      ${browser}
     Go_To_Cart_Page
     Check_Page_Cart_Display
