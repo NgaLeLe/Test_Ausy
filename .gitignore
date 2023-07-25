@@ -1,0 +1,9 @@
+./.idea
+
+reports
+
+./log.html
+./output.xml
+./report.html
+./*.png
+./*.log
