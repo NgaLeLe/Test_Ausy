@@ -15,15 +15,26 @@ Opening_PS_With_Url
 
 
 Opening_Browser
-    [Documentation]    Open browser
+    [Documentation]    Open browser without URL
     [Arguments]    ${browser}
+
     Open Browser  about:blank  browser=${browser}
     Maximize Browser Window
 
 Go_To_URL
+    [Documentation]    go to URL valid
+    [Arguments]    ${browser}
     [Arguments]    ${URL}
+
     Go To    ${URL}
 
 
 Closing_Browser
     Close All Browsers
+
+
+Dialog_Message_SP_Display
+    [Documentation]    get message's error in diolog when user clicks in the button "OK"
+    Sleep    1s
+    ${msg_error}=    Handle Alert    timeout=1s
+    [Return]    ${msg_error}

@@ -4,9 +4,11 @@ Ce projet qui a été réalisé par Nga TRAN, permet de réagir des tests sur l'
 
 Il contient
 - Cas des tests pour la fonctionnalité Login
-- Cas de test pour la fonctionnalité Cart
+- Cas des tests pour la fonctionnalité Sign Up
+- Cas des tests pour la fonctionnalité Cart
 
-Librairies utilisées: Python 3.11
+Librairies utilisées:
+Python 3.11
 robotframework==6.1
 robotframework-datadriver==1.8.1
 robotframework-seleniumlibrary==6.1.0
