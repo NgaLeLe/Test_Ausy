@@ -43,17 +43,17 @@ Close_Login_SP
     Log    Page Login is closed
 
 
-SignUp_SP_New_User_Valid
+SignUp_SP_New_User
     [Documentation]     Open modal "Sign up" and user can enter new username and new password
     [Arguments]    ${username}  ${password}
     Go_To_SignUp_Page
     Enter_New_User_Pswd_SP    ${username}  ${password}
     ${mess}=    Confirm_SignUp_SP
-    Should Be Equal    ${mess}    ${msg_signup_succes}
+    [Return]    ${mess}
 
 
 Logout_SP
     [Documentation]    user click menu item Logout
     ${logout}=      Element Should Be Visible    ${navLogout}
     Log    ${logout}
-    C
+    Logout_Espace_User

@@ -25,6 +25,6 @@ Confirm_Login_SP
 
 Cancel_Login_SP
     [Documentation]    user cancel his login
-    Cancel_Modal_SP         ${btn_close}
+    Cancel_Modal_SP         ${btn_close_down1}
 
 

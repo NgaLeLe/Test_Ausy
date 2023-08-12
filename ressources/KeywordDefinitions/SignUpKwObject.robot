@@ -4,7 +4,6 @@ Library            SeleniumLibrary
 Resource           ./Common.robot
 Resource           ./ModalKwObject.robot
 Resource           ../Locators/SignUpModal.resource
-Resource           ../Variables/VAR_SignUp.resource
 
 
 *** Keywords ***
@@ -31,9 +30,9 @@ Confirm_SignUp_SP
 
 Cancel_SignUp_SP
     [Documentation]    user cancel his signup's popup
-    Cancel_Modal_SP         ${btn_close}
+    Cancel_Modal_SP         ${btn_close_down2}
 
 
 Close_SignUp_SP
     [Documentation]    user close his signup's popup by clicking on button [x] on top
-    Cancel_Modal_SP         ${btn_close_top}
+    Close_Modal_SP         ${btn_close_top2}
