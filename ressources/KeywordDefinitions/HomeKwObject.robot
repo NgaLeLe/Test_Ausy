@@ -4,6 +4,7 @@ Library            SeleniumLibrary
 Resource           ../Locators/HomePage.resource
 Resource           ./LoginKwObject.robot
 Resource           ./SignUpKwObject.robot
+Resource           ./CartKwObject.robot
 
 *** Keywords ***
 Check_Home_Page_Displayed
@@ -17,6 +18,7 @@ Check_Home_Page_Displayed
 Go_To_Cart_Page
     [Documentation]    Click menu Cart to go to page Cart
     Go_To_Menu_Item    ${navCart}
+    Check_Page_Cart_Display
 
 
 Go_To_Login_Page
