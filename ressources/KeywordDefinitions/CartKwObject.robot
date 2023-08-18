@@ -2,7 +2,6 @@
 Documentation      Definition the keyword for Cart's Page
 Library            SeleniumLibrary
 Resource           ../Locators/CartPage.resource
-Resource           ../Locators/PlaceOrderModal.resource
 
 *** Keywords ***
 Check_Page_Cart_Display

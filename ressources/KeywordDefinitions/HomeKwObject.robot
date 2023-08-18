@@ -37,7 +37,7 @@ Logout_Espace_User
     [Documentation]     user clicks Logout in menu
     ...         element Logout isn't displayed
     ...         element Login, Signup displayed
-    Log    User logout
+
     Go_To_Menu_Item                  ${navLogout}
     Element Should Be Visible        ${navLogin}
     Element Should Be Visible        ${navSignup}
@@ -46,8 +46,8 @@ Logout_Espace_User
 
 Go_To_Menu_Item
     [Documentation]    Click menu item with para menuItem to go to page Item's detail
-
     [Arguments]     ${menuItem}
+
     Wait Until Element Is Visible   ${menuItem}
     Click Link                      ${menuItem}
 

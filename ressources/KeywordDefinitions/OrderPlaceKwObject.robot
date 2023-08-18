@@ -3,11 +3,9 @@ Documentation      Definition the keyword for modal Place Order
 Library            SeleniumLibrary
 Resource            ../Locators/PlaceOrderModal.resource
 Resource            ./ModalKwObject.robot
-Resource            ../Variables/VAR_PlaceOrder.resource
 Resource            ./Common.robot
 
 *** Variables ***
-${mess}
 
 *** Keywords ***
 Check_Page_Place_Order_Displayed

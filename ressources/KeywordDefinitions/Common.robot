@@ -21,9 +21,9 @@ Opening_Browser
     Open Browser  about:blank  browser=${browser}
     Maximize Browser Window
 
+
 Go_To_URL
     [Documentation]    go to URL valid
-    [Arguments]    ${browser}
     [Arguments]    ${URL}
 
     Go To    ${URL}
@@ -41,5 +41,4 @@ Dialog_Message_SP_Display
         Sleep    1s
         ${msg_error}=    Handle Alert    timeout=1s
     END
-    Log     ${msg_error}
     [Return]    ${msg_error}

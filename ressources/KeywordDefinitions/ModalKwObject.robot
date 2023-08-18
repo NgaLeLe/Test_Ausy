@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation      Definition the keyword for modal generic Login/Signup
+Documentation      Definition the keyword for modal generic Login/Signup/Cart
 Library            SeleniumLibrary
 
 
