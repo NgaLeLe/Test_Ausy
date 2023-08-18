@@ -24,7 +24,6 @@ CART_01_Annuler_PlaceOrder
     Click_Place_Order
     Capture Page Screenshot    modal_Place_Order.png
     Cancel_PlaceOrder_SP
-    Closing_Browser
 
 
 CART_02_PlaceOrder_Valide
@@ -33,12 +32,12 @@ CART_02_PlaceOrder_Valide
     ...                 je renseigne les infos de mon order et je le confirme
     ...                 l'app me donnera un message contenant mes infos saisies (name, credit_card) dans le popup
 
-    [Tags]    CART_03
+    [Tags]    CART_02
 
     Go_To_Cart_Page
     Click_Place_Order
     Enter_User_Card_Place_Order     ${info_card}
-    ${mess_purchase}=    Confirm_Purchase_Place_SP
+    ${mess_purchase}=    Confirm_Purchase_Place_Valid_SP
     Should Contain    ${mess_purchase}      ${info_card}[name]
     Should Contain    ${mess_purchase}      ${info_card}[card]
     Should Contain    ${mess_purchase}      ${str_amount}
@@ -52,6 +51,8 @@ CART_03_PlaceOrder_Input_Blank
 
     Go_To_Cart_Page
     Click_Place_Order
-    ${mess_error}=    Confirm_Purchase_Place_SP
-    Log    ${mess_error}
+    ${mess_error}=    Confirm_Purchase_Place_Invalid_SP
+    Should Be Equal    ${mess_error}    ${mess_place_invalid}
+    Close_PlaceOrder_SP
+
 

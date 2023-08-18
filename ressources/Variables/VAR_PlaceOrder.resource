@@ -9,5 +9,6 @@ ${year_card}        2023
 &{info_card}        name=${user_card}   city=${city_card}   country=${country_card}
 ...                 card=${number_card}     month=${month_card}     year=${year_card}
 
-${str_confirm_purchase}     Thank you for your purchase!
-${str_amount}               Amount: 0 USD
+
+&{info_card_invalid}        name=   city=${city_card}   country=${country_card}
+...                         card=     month=${month_card}     year=${year_card}

@@ -30,7 +30,7 @@ Cancel_Modal_SP
     [Documentation]    user cancel his login
     [Arguments]         ${btn_cancel}
     Click Button        ${btn_cancel}
-    Click Button        ${btn_cancel}
+
 
 Close_Modal_SP
     [Arguments]         ${btn_close}

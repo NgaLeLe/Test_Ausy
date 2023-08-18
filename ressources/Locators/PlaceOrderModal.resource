@@ -12,8 +12,15 @@ ${txt_year}             id:year
 
 ${btn_close_modal}      xpath://*[@id="orderModal"]/div/div/div[3]/button[contains(.,'Close')]
 ${btn_purchase}         xpath://*[@id="orderModal"]/div/div/div[3]/button[contains(.,'Purchase')]
-${btn_close_top2}       xpath://*[@id="orderModal"]/div/div/div[@class="modal-header"]/button
+${btn_close_top3}       xpath://*[@id="orderModal"]/div/div/div[@class="modal-header"]/button
 
 
 ${mess_confirm_purchase}    xpath://*/p[@class="lead text-muted "]
 ${btn_OK_popup_confirm}     xpath://*/div[@class="sa-button-container"]/div/button
+
+## mess_purchase_succes
+${str_confirm_purchase}     Thank you for your purchase!
+${str_amount}               Amount: 0 USD
+
+## mes_purchase_invalid
+${mess_place_invalid}       Please fill out Name and Creditcard.

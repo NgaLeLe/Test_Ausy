@@ -35,6 +35,11 @@ Closing_Browser
 
 Dialog_Message_SP_Display
     [Documentation]    get message's error in diolog when user clicks in the button "OK"
-    Sleep    1s
-    ${msg_error}=    Handle Alert    timeout=1s
+    TRY
+        Fail    Alert not found in 1 second.
+    EXCEPT
+        Sleep    1s
+        ${msg_error}=    Handle Alert    timeout=1s
+    END
+    Log     ${msg_error}
     [Return]    ${msg_error}
